@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: 07a4e4b2a179b3a4e9830a6e3288f49e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_0
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 7485
+        width: 444
+        height: 715
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7192e26dd9ab2946a05c23fc8d58a51
+      internalID: -81473203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_1
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 7485
+        width: 444
+        height: 715
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471c9f5e80496784ba315392864a0dfa
+      internalID: -59530109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_2
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 7485
+        width: 444
+        height: 715
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301ae37a4c2f34243a9b64da9d1a6974
+      internalID: -1877721843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_3
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 7485
+        width: 444
+        height: 715
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9657c36d811c92545aab73d5a3cffabe
+      internalID: -343584026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_4
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 7485
+        width: 444
+        height: 715
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85e619c61bb94f448ccee5923aec6b1
+      internalID: -411159684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_5
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 7485
+        width: 444
+        height: 715
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fa66cf444a70a4aa855f0fbb0f93e4
+      internalID: -1868685421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_6
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 6673
+        width: 508
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caee095d976a9c64eb46d2d6cbacceb5
+      internalID: 1859521039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_7
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 6673
+        width: 508
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fa159737799324abd72e5429f67e4b
+      internalID: 911384511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_8
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 6673
+        width: 508
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8599bf44c783140a675bf15b12cbf3
+      internalID: 2043725547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_9
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 6673
+        width: 508
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87424a0597053c46a0258d03708763f
+      internalID: -43411583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_10
+      rect:
+        serializedVersion: 2
+        x: 2638
+        y: 6673
+        width: 508
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e3ca5fc7656414ca31916e3c9ea100
+      internalID: -960443327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_11
+      rect:
+        serializedVersion: 2
+        x: 3203
+        y: 6673
+        width: 508
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7f718793a383b4da0567af5209d58e
+      internalID: -1985302923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_12
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 5757
+        width: 665
+        height: 713
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5185b1f1c737914fb0726b1f8f05be4
+      internalID: -1739565571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_13
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 5757
+        width: 665
+        height: 713
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0071a9028d99444bb4db53266075ae
+      internalID: 1956842001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_14
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 5757
+        width: 665
+        height: 713
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eca524f234ab4f45bf72adfd73f705b
+      internalID: 1566531581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_15
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 5757
+        width: 665
+        height: 713
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021cc500858f4134593b62c9039a1969
+      internalID: -1186677674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_16
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 5757
+        width: 665
+        height: 713
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a30ad7d2af5b7b44bc3d10874f42669
+      internalID: -360782440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasMonocromo_Mesa de trabajo 1 copia_18
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 5757
+        width: 665
+        height: 713
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7780393182903664b98eb06b6de31b39
+      internalID: -1287539724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_0: -81473203
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_1: -59530109
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_10: -960443327
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_11: -1985302923
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_12: -1739565571
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_13: 1956842001
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_14: 1566531581
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_15: -1186677674
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_16: -360782440
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_17: -1295577352
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_18: -1287539724
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_19: -1660339192
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_2: -1877721843
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_20: 2000034128
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_21: 1316143435
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_22: -199068792
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_23: -1810669054
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_24: -120543135
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_25: 1187023579
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_26: -1168468676
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_27: 627909698
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_28: 748659358
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_29: -162382157
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_3: -343584026
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_30: 154963681
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_31: -12763477
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_4: -411159684
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_5: -1868685421
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_6: 1859521039
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_7: 911384511
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_8: 2043725547
+      SpriteAtlasMonocromo_Mesa de trabajo 1 copia_9: -43411583
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
