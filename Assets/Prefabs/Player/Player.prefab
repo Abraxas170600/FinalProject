@@ -9877,8 +9877,9 @@ GameObject:
   - component: {fileID: 7344338816905479453}
   - component: {fileID: 2174801738011094984}
   - component: {fileID: 8993503914331193792}
-  - component: {fileID: 9087501139040590279}
+  - component: {fileID: 2385275031377583468}
   - component: {fileID: 7994112477761164078}
+  - component: {fileID: 9087501139040590279}
   - component: {fileID: 4008442471120406754}
   - component: {fileID: 8176142627565150917}
   - component: {fileID: 2714263419330589693}
@@ -9972,6 +9973,68 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2385275031377583468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2542784622673489981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 372988a6c6dcae948a18e9c10a5fcb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLife: 3
+  maxLife: 3
+  healthChangeEvent:
+    _PersistentCalls: []
+  deathEvent:
+    _PersistentCalls: []
+  speed: 10
+  damage: 1
+--- !u!114 &7994112477761164078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2542784622673489981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2733b1992c6d228449fcf664a50258c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  fallingDownMultiplier: 1
+  maxJumpHeight: 10
+  maxJumpTine: 1
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  rb: {fileID: 8993503914331193792}
+  capsuleCollider2D: {fileID: 2174801738011094984}
+  playerAnimator: {fileID: 4008442471120406754}
+  playerPowerStorage: {fileID: 8176142627565150917}
+  triggerDetector: {fileID: 9089283109474730772}
+  playerDash: {fileID: 2714263419330589693}
+  playerWallJump: {fileID: 3659076654932647747}
+  playerFastFall: {fileID: 4789703569263392557}
+  particleEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1839787626672462810}
+        m_TargetAssemblyTypeName: ParticleActive, Assembly-CSharp
+        m_MethodName: ActiveParticleAction
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &9087501139040590279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10082,48 +10145,6 @@ MonoBehaviour:
   m_DefaultActionMap: PlayerControls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &7994112477761164078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2542784622673489981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2733b1992c6d228449fcf664a50258c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 8
-  fallingDownMultiplier: 1
-  maxJumpHeight: 10
-  maxJumpTine: 1
-  groundLayerMask:
-    serializedVersion: 2
-    m_Bits: 8
-  rb: {fileID: 8993503914331193792}
-  capsuleCollider2D: {fileID: 2174801738011094984}
-  playerAnimator: {fileID: 4008442471120406754}
-  playerPowerStorage: {fileID: 8176142627565150917}
-  triggerDetector: {fileID: 9089283109474730772}
-  playerDash: {fileID: 2714263419330589693}
-  playerWallJump: {fileID: 3659076654932647747}
-  playerFastFall: {fileID: 4789703569263392557}
-  particleEvents:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1839787626672462810}
-        m_TargetAssemblyTypeName: ParticleActive, Assembly-CSharp
-        m_MethodName: ActiveParticleAction
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &4008442471120406754
 MonoBehaviour:
   m_ObjectHideFlags: 0

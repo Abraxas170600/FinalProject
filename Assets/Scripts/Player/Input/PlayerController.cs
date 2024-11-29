@@ -15,16 +15,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayerMask;
 
     [Header("Dependences")]
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private CapsuleCollider2D capsuleCollider2D;
-    [SerializeField] private PlayerAnimator playerAnimator;
-    [SerializeField] private PlayerPowerStorage playerPowerStorage;
-    [SerializeField] private TriggerDetector triggerDetector;
+    private Rigidbody2D rb;
+    private CapsuleCollider2D capsuleCollider2D;
+    private PlayerAnimator playerAnimator;
+    private PlayerPowerStorage playerPowerStorage;
+    private TriggerDetector triggerDetector;
 
     [Header("Powers")]
-    [SerializeField] private PlayerDash playerDash;
-    [SerializeField] private PlayerWallJump playerWallJump;
-    [SerializeField] private PlayerFastFall playerFastFall;
+    private PlayerDash playerDash;
+    private PlayerWallJump playerWallJump;
+    private PlayerFastFall playerFastFall;
 
     [Header("Events")]
     [SerializeField] private UnityEvent<int> particleEvents;
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
     {
         Initialize();
     }
-    private void Update()
+    public void UpdateController()
     {
         NormalActions();
         SpecialActions();
@@ -78,6 +78,16 @@ public class PlayerController : MonoBehaviour
     #region Interface Methods
     public void Initialize()
     {
+        rb = GetComponent<Rigidbody2D>();
+        capsuleCollider2D = GetComponent<CapsuleCollider2D>();
+        playerAnimator = GetComponent<PlayerAnimator>();
+        playerPowerStorage = GetComponent<PlayerPowerStorage>();
+        triggerDetector = GetComponent<TriggerDetector>();
+
+        playerDash = GetComponent<PlayerDash>();
+        playerWallJump = GetComponent<PlayerWallJump>();
+        playerFastFall = GetComponent<PlayerFastFall>();
+
         playerPowerStorage.Initialize();
         _playerSkills = new PlayerSkills();
         Gravity = (-2f * maxJumpHeight) / Mathf.Pow(maxJumpTine / 2f, 2);
