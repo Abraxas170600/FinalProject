@@ -9884,6 +9884,7 @@ GameObject:
   - component: {fileID: 8176142627565150917}
   - component: {fileID: 2714263419330589693}
   - component: {fileID: 3659076654932647747}
+  - component: {fileID: 1656204620081399282}
   - component: {fileID: 4789703569263392557}
   - component: {fileID: 9089283109474730772}
   m_Layer: 6
@@ -9991,7 +9992,6 @@ MonoBehaviour:
     _PersistentCalls: []
   deathEvent:
     _PersistentCalls: []
-  speed: 10
   damage: 1
 --- !u!114 &7994112477761164078
 MonoBehaviour:
@@ -10012,14 +10012,6 @@ MonoBehaviour:
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 8
-  rb: {fileID: 8993503914331193792}
-  capsuleCollider2D: {fileID: 2174801738011094984}
-  playerAnimator: {fileID: 4008442471120406754}
-  playerPowerStorage: {fileID: 8176142627565150917}
-  triggerDetector: {fileID: 9089283109474730772}
-  playerDash: {fileID: 2714263419330589693}
-  playerWallJump: {fileID: 3659076654932647747}
-  playerFastFall: {fileID: 4789703569263392557}
   particleEvents:
     m_PersistentCalls:
       m_Calls:
@@ -10194,6 +10186,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94af297b477c37543a3eb732154f816e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1656204620081399282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2542784622673489981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5889ebe80362a24883bf7d31a2b238c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 1.5
+  bashPower: 7000
+  bashTime: 0.2
+  arrow: {fileID: 0}
 --- !u!114 &4789703569263392557
 MonoBehaviour:
   m_ObjectHideFlags: 0

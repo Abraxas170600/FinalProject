@@ -10,8 +10,8 @@ public class PlayerController : MonoBehaviour
     [Header("Configuration")]
     [SerializeField] private float speed;
     [SerializeField] private float fallingDownMultiplier = 2.0f;
-    [SerializeField] private float maxJumpHeight = 2.5f;
-    [SerializeField] private float maxJumpTine = 1.0f;
+    public float maxJumpHeight = 2.5f;
+    public float maxJumpTine = 1.0f;
     [SerializeField] private LayerMask groundLayerMask;
 
     [Header("Dependences")]
@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private PlayerDash playerDash;
     private PlayerWallJump playerWallJump;
     private PlayerFastFall playerFastFall;
+    private PlayerBash playerBash;
 
     [Header("Events")]
     [SerializeField] private UnityEvent<int> particleEvents;
@@ -71,7 +72,10 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 position = rb.position;
         position += _currentVelocity * Time.fixedDeltaTime;
-        rb.MovePosition(position);
+        //if (playerBash.IsBashing == false)
+        //{
+            rb.MovePosition(position);
+        //}
         if (_currentVelocity.y > 0) ResetJump();
     }
 
@@ -87,6 +91,7 @@ public class PlayerController : MonoBehaviour
         playerDash = GetComponent<PlayerDash>();
         playerWallJump = GetComponent<PlayerWallJump>();
         playerFastFall = GetComponent<PlayerFastFall>();
+        playerBash = GetComponent<PlayerBash>();
 
         playerPowerStorage.Initialize();
         _playerSkills = new PlayerSkills();
@@ -103,6 +108,7 @@ public class PlayerController : MonoBehaviour
         playerDash.Dash(this, IsGrounded(), playerWallJump.IsWalled(capsuleCollider2D, _heightCheckDistance, groundLayerMask));
         playerWallJump.WallJump(_isJumpingPressed, this, capsuleCollider2D, _heightCheckDistance, groundLayerMask, IsGrounded());
         playerFastFall.FastFall(this, IsGrounded(), particleEvents);
+        playerBash.Bash(this);
     }
     public void Physics()
     {
@@ -165,7 +171,7 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetIsGrounded(IsGrounded());
         playerAnimator.SetIsWalking(_playerState == PlayerState.isGrounded && _currentVelocity.x != 0);
         playerAnimator.SetIsJumping(_playerState == PlayerState.isJumping);
-        playerAnimator.SetIsDashing(playerDash.IsDashing);
+        playerAnimator.SetIsDashing(playerDash.IsDashing || playerBash.IsBashing);
         playerAnimator.SetOnWall(playerWallJump.IsWalled(capsuleCollider2D, _heightCheckDistance, groundLayerMask) && playerWallJump.IsWallSliding);
         playerAnimator.SetIsFastFalling(IsFastFallingPressed && playerFastFall.IsFastFalling && !IsGrounded());
     }
