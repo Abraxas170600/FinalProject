@@ -6,6 +6,8 @@ TagManager:
   tags:
   - PowerObject
   - BashAble
+  - Obstacle
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX

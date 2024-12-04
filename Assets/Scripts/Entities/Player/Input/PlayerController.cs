@@ -244,10 +244,15 @@ public class PlayerController : MonoBehaviour
     }
     public void PowerDetected(bool detected)
     {
-        if (!detected) return;
+        _powerObject = triggerDetector.LastElementDetected.GetComponent<PowerObject>();
+
+        if (detected)
+        {
+            _powerObject.InteractText(true);
+        }
         else
         {
-            _powerObject = triggerDetector.LastElementDetected.GetComponent<PowerObject>();
+            _powerObject.InteractText(false);
         }
     }
     #endregion

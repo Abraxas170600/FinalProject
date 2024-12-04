@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PowerObject : MonoBehaviour
 {
+    [SerializeField] private GameObject interactText;
     [SerializeField] private PlayerSkills.SkillType skillType;
 
     public void PlayerSkillActive(PlayerSkills playerSkills)
@@ -13,5 +12,9 @@ public class PowerObject : MonoBehaviour
     public PlayerSkills.SkillType GetSkillType()
     {
         return skillType;
+    }
+    public void InteractText(bool isActive)
+    {
+        interactText.SetActive(isActive);
     }
 }
