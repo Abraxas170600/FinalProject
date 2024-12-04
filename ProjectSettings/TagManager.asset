@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - PowerObject
+  - BashAble
+  - Obstacle
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX

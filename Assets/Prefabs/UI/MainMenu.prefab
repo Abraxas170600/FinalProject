@@ -2317,7 +2317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8267361748562999335
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4587,7 +4587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1968980911369458900
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6216,7 +6216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.047058824}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.047058824}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6232,7 +6232,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 6
 --- !u!1 &7201141421154477152
 GameObject:
   m_ObjectHideFlags: 0
@@ -6692,6 +6692,7 @@ GameObject:
   - component: {fileID: 179740527610913611}
   - component: {fileID: 6156967494497733101}
   - component: {fileID: 5284006318358271101}
+  - component: {fileID: 5066950955539252931}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -6799,6 +6800,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589fba6c6d0e12041b16acb23bda85ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5066950955539252931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738653820612962468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77ce4413dc95744d80ee05a03c0c712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 5942958920087982244}
+  panelBrightness: {fileID: 3237076737494609604}
 --- !u!1 &8019552966202170258
 GameObject:
   m_ObjectHideFlags: 0
@@ -6964,7 +6979,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5066950955539252931}
+        m_TargetAssemblyTypeName: BrightnessSystem, Assembly-CSharp
+        m_MethodName: UpdateBrightness
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8307823180313418438
 GameObject:
   m_ObjectHideFlags: 0
@@ -7141,6 +7168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8995934169215178862}
+  - component: {fileID: 3908864385811354196}
   m_Layer: 5
   m_Name: PressKey
   m_TagString: Untagged
@@ -7167,6 +7195,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3908864385811354196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8379440004291921101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f3f2f525f8b004892d32f9da51b37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressKeyPanel: {fileID: 2593233676393001954}
+  mainMenuPanel: {fileID: 5385059650829727384}
 --- !u!1 &8502974401736906581
 GameObject:
   m_ObjectHideFlags: 0
