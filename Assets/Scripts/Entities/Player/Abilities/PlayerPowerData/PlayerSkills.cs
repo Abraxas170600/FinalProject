@@ -8,7 +8,9 @@ public class PlayerSkills
     {
         Dash,
         WallJump,
-        FastFall
+        FastFall,
+        Bash,
+        Attack
     }
 
     private List<SkillType> unlockedSkillTypeList;

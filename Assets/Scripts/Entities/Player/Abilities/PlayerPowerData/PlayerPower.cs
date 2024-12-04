@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class PlayerPower : MonoBehaviour
 {
-    public abstract void Activate(bool State);
+    public abstract void Activate(bool State, PlayerController playerController);
 }

@@ -1,6 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using UltEvents;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -10,9 +8,12 @@ public class PlayerController : MonoBehaviour
     [Header("Configuration")]
     [SerializeField] private float speed;
     [SerializeField] private float fallingDownMultiplier = 2.0f;
+    [SerializeField] private LayerMask groundLayerMask;
     public float maxJumpHeight = 2.5f;
     public float maxJumpTine = 1.0f;
-    [SerializeField] private LayerMask groundLayerMask;
+    private bool isKnockbackActive = false;
+    private Vector2 knockbackVelocity;
+    private float knockbackTimeRemaining;
 
     [Header("Dependences")]
     private Rigidbody2D rb;
@@ -26,9 +27,11 @@ public class PlayerController : MonoBehaviour
     private PlayerWallJump playerWallJump;
     private PlayerFastFall playerFastFall;
     private PlayerBash playerBash;
+    private PlayerAttack playerAttack;
 
     [Header("Events")]
     [SerializeField] private UnityEvent<int> particleEvents;
+    private UltEvent<Enemy> attackEvent;
 
     private PlayerState _playerState;
 
@@ -40,13 +43,15 @@ public class PlayerController : MonoBehaviour
     private float _movementInput;
     private float _heightCheckDistance = 0.05f;
 
-    private bool _isJumpingPressed;
+    private bool isJumpingPressed;
     private bool isDashingPressed;
     private bool isFastFallingPressed;
     private bool isFacingRight;
+    private bool isBashingPressed;
+    private bool isAttackingPressed;
 
-    private float _coyoteTime = 0.06f;
-    private float _coyoteTimeCounter;
+    private float coyoteTime = 0.06f;
+    private float coyoteTimeCounter;
     private float jumpForce => (maxJumpHeight) / (maxJumpTine / 2f);
     private float gravity;
 
@@ -55,7 +60,10 @@ public class PlayerController : MonoBehaviour
     public bool IsDashingPressed { get => isDashingPressed; set => isDashingPressed = value; }
     public bool IsFastFallingPressed { get => isFastFallingPressed; set => isFastFallingPressed = value; }
     public bool IsFacingRight { get => isFacingRight; set => isFacingRight = value; }
+    public bool IsBashingPressed { get => isBashingPressed; set => isBashingPressed = value; }
+    public bool IsAttackingPressed { get => isAttackingPressed; set => isAttackingPressed = value; }
     public float Gravity { get => gravity; set => gravity = value; }
+    public UltEvent<Enemy> AttackEvent { get => attackEvent; set => attackEvent = value; }
 
     private void Awake()
     {
@@ -63,26 +71,33 @@ public class PlayerController : MonoBehaviour
     }
     public void UpdateController()
     {
-        NormalActions();
-        SpecialActions();
-        Physics();
-        Graphics();
+        if (isKnockbackActive)
+        {
+            ApplyKnockbackMovement();
+        }
+        else
+        {
+            NormalActions();
+            SpecialActions();
+            Physics();
+            Graphics();
+        }
+    }
+    public void GetRigidbody(Rigidbody2D rigidbody2D)
+    {
+        rb = rigidbody2D;
     }
     private void FixedUpdate()
     {
         Vector2 position = rb.position;
         position += _currentVelocity * Time.fixedDeltaTime;
-        //if (playerBash.IsBashing == false)
-        //{
-            rb.MovePosition(position);
-        //}
+        rb.MovePosition(position);
         if (_currentVelocity.y > 0) ResetJump();
     }
 
     #region Interface Methods
     public void Initialize()
     {
-        rb = GetComponent<Rigidbody2D>();
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
         playerAnimator = GetComponent<PlayerAnimator>();
         playerPowerStorage = GetComponent<PlayerPowerStorage>();
@@ -92,6 +107,7 @@ public class PlayerController : MonoBehaviour
         playerWallJump = GetComponent<PlayerWallJump>();
         playerFastFall = GetComponent<PlayerFastFall>();
         playerBash = GetComponent<PlayerBash>();
+        playerAttack = GetComponent<PlayerAttack>();
 
         playerPowerStorage.Initialize();
         _playerSkills = new PlayerSkills();
@@ -105,10 +121,11 @@ public class PlayerController : MonoBehaviour
     }
     public void SpecialActions()
     {
-        playerDash.Dash(this, IsGrounded(), playerWallJump.IsWalled(capsuleCollider2D, _heightCheckDistance, groundLayerMask));
-        playerWallJump.WallJump(_isJumpingPressed, this, capsuleCollider2D, _heightCheckDistance, groundLayerMask, IsGrounded());
-        playerFastFall.FastFall(this, IsGrounded(), particleEvents);
-        playerBash.Bash(this);
+        if(!IsBashingPressed)
+            playerDash.Dash(IsGrounded(), playerWallJump.IsWalled(capsuleCollider2D, _heightCheckDistance, groundLayerMask));
+        playerWallJump.WallJump(isJumpingPressed, capsuleCollider2D, _heightCheckDistance, groundLayerMask, IsGrounded());
+        playerFastFall.FastFall(IsGrounded(), particleEvents);
+        playerBash.Bash();
     }
     public void Physics()
     {
@@ -134,7 +151,7 @@ public class PlayerController : MonoBehaviour
     private void TryApplyJump()
     {
         if (IsGrounded()) _currentVelocity.y = Mathf.Max(_currentVelocity.y, 0);
-        if (_inputVelocity.y > 0 && _coyoteTimeCounter > 0f)
+        if (_inputVelocity.y > 0 && coyoteTimeCounter > 0f)
         {
             _currentVelocity.y = jumpForce;
             particleEvents.Invoke(0);
@@ -153,15 +170,36 @@ public class PlayerController : MonoBehaviour
         {
             bool isFalling = _currentVelocity.y < 0.0f;
             float gravityMultiplier = isFalling ? fallingDownMultiplier : 1f;
-            float jumpForceMultiplier = _isJumpingPressed ? 2f : 1f;
+            float jumpForceMultiplier = isJumpingPressed ? 2f : 1f;
             _currentVelocity.y += Gravity * Time.deltaTime * gravityMultiplier / jumpForceMultiplier;
             _currentVelocity.y = Mathf.Max(_currentVelocity.y, Gravity / 2);
         }
     }
     private void CoyoteTime()
     {
-        if (IsGrounded()) _coyoteTimeCounter = _coyoteTime;
-        else if (!IsGrounded() && _coyoteTimeCounter > 0) _coyoteTimeCounter -= Time.deltaTime;
+        if (IsGrounded()) coyoteTimeCounter = coyoteTime;
+        else if (!IsGrounded() && coyoteTimeCounter > 0) coyoteTimeCounter -= Time.deltaTime;
+    }
+    private void ApplyKnockbackMovement()
+    {
+        if (knockbackTimeRemaining > 0)
+        {
+            _currentVelocity = knockbackVelocity;
+            knockbackTimeRemaining -= Time.deltaTime;
+        }
+        else
+        {
+            isKnockbackActive = false;
+            _currentVelocity = Vector2.zero;
+        }
+
+        Physics();
+    }
+    public void ApplyKnockback(Vector2 direction, float force, float duration)
+    {
+        isKnockbackActive = true;
+        knockbackVelocity = direction.normalized * force;
+        knockbackTimeRemaining = duration;
     }
     #endregion
 
@@ -171,7 +209,7 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetIsGrounded(IsGrounded());
         playerAnimator.SetIsWalking(_playerState == PlayerState.isGrounded && _currentVelocity.x != 0);
         playerAnimator.SetIsJumping(_playerState == PlayerState.isJumping);
-        playerAnimator.SetIsDashing(playerDash.IsDashing || playerBash.IsBashing);
+        playerAnimator.SetIsDashing(playerDash.IsDashing || IsBashingPressed);
         playerAnimator.SetOnWall(playerWallJump.IsWalled(capsuleCollider2D, _heightCheckDistance, groundLayerMask) && playerWallJump.IsWallSliding);
         playerAnimator.SetIsFastFalling(IsFastFallingPressed && playerFastFall.IsFastFalling && !IsGrounded());
     }
@@ -197,7 +235,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             _powerObject.PlayerSkillActive(_playerSkills);
-            playerPowerStorage.PlayerPowers[(int)_powerObject.GetSkillType()].Activate(CanUsePower(_powerObject));
+            playerPowerStorage.PlayerPowers[(int)_powerObject.GetSkillType()].Activate(CanUsePower(_powerObject), this);
         }
     }
     private bool CanUsePower(PowerObject powerObject)
@@ -245,14 +283,14 @@ public class PlayerController : MonoBehaviour
     {
         if (!value.performed)
         {
-            _isJumpingPressed = false;
+            isJumpingPressed = false;
             _inputVelocity = new Vector2(_inputVelocity.x, 0f);
             return;
         }
 
         if (!playerDash.IsDashing)
         {
-            _isJumpingPressed = true;
+            isJumpingPressed = true;
             _inputVelocity = new Vector2(_inputVelocity.x, 1f);
         }
     }
@@ -270,6 +308,15 @@ public class PlayerController : MonoBehaviour
         {
             if (playerWallJump.IsWallSliding || CurrentVelocity.y == 0f) return;
             else IsFastFallingPressed = true;
+        }
+    }
+    public void OnAttack(InputAction.CallbackContext value)
+    {
+        if (value.started && playerAttack.CanAttack())
+        {
+            IsAttackingPressed = true;
+            playerAnimator.SetIsAttacking();
+            playerAttack.AttackTimeCounter = 0;
         }
     }
     #endregion

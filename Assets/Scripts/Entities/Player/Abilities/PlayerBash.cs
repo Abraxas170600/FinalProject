@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerBash : PlayerPower
 {
     private bool isActive;
+    private PlayerController playerController;
 
     [Header("Bash")]
     [SerializeField] private float radius;
@@ -18,21 +19,19 @@ public class PlayerBash : PlayerPower
 
     private bool nearToBashAbleObj;
     private bool isChoosingDirection;
-    private bool isBashing;
-
-    public bool IsBashing { get => isBashing; set => isBashing = value; }
 
     private void Start()
     {
         bashTimeRemaining = bashTime;
     }
-    public override void Activate(bool state)
+    public override void Activate(bool State, PlayerController playerController)
     {
-        isActive = state;
+        isActive = State;
+        this.playerController = playerController;
     }
-    public void Bash(PlayerController playerController)
+    public void Bash()
     {
-        //if (/*!isActive || */isBashing) return;
+        if (!isActive) return;
 
         CheckForBashableObjects();
 
@@ -46,7 +45,7 @@ public class PlayerBash : PlayerPower
             }
             else if (isChoosingDirection && Input.GetKeyUp(KeyCode.Mouse1))
             {
-                PerformBash(playerController);
+                PerformBash();
             }
         }
         else if (bashableObject != null)
@@ -54,9 +53,9 @@ public class PlayerBash : PlayerPower
             HighlightBashableObject(false);
         }
 
-        if (isBashing)
+        if (playerController.IsBashingPressed)
         {
-            ContinueBash(playerController);
+            ContinueBash();
         }
     }
 
@@ -91,12 +90,12 @@ public class PlayerBash : PlayerPower
         isChoosingDirection = true;
     }
 
-    private void PerformBash(PlayerController playerController)
+    private void PerformBash()
     {
         Time.timeScale = 1f;
         bashableObject.transform.localScale = Vector2.one;
         isChoosingDirection = false;
-        isBashing = true;
+        playerController.IsBashingPressed = true;
 
         playerController.CurrentVelocity = Vector2.zero;
         playerController.Gravity = 0;
@@ -117,7 +116,7 @@ public class PlayerBash : PlayerPower
         arrow.SetActive(false);
     }
 
-    private void ContinueBash(PlayerController playerController)
+    private void ContinueBash()
     {
         if (bashTimeRemaining > 0)
         {
@@ -126,13 +125,13 @@ public class PlayerBash : PlayerPower
         }
         else
         {
-            EndBash(playerController);
+            EndBash();
         }
     }
 
-    private void EndBash(PlayerController playerController)
+    private void EndBash()
     {
-        isBashing = false;
+        playerController.IsBashingPressed = false;
         bashTimeRemaining = bashTime;
         playerController.Gravity = (-2f * playerController.maxJumpHeight) / Mathf.Pow(playerController.maxJumpTine / 2f, 2);
     }

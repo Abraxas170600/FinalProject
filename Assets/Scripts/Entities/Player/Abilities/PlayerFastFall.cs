@@ -6,6 +6,8 @@ using UnityEngine.Events;
 public class PlayerFastFall : PlayerPower
 {
     private bool isActive;
+    private PlayerController playerController;
+
     private bool isFastFalling;
     private float FastFallVelocity = 30f;
 
@@ -15,20 +17,21 @@ public class PlayerFastFall : PlayerPower
 
     public bool IsFastFalling { get => isFastFalling; set => isFastFalling = value; }
 
-    public override void Activate(bool State)
+    public override void Activate(bool State, PlayerController playerController)
     {
         isActive = State;
+        this.playerController = playerController;
     }
-    public void FastFall(PlayerController playerController, bool isGrounded, UnityEvent<int> particleEvent)
+    public void FastFall(bool isGrounded, UnityEvent<int> particleEvent)
     {
         if (!isActive) return;
         else
         {
             if (!playerController.IsFastFallingPressed) return;
-            else FastFallActive(playerController, isGrounded, particleEvent);
+            else FastFallActive(isGrounded, particleEvent);
         }
     }
-    private void FastFallActive(PlayerController playerController, bool isGrounded, UnityEvent<int> particleEvent)
+    private void FastFallActive(bool isGrounded, UnityEvent<int> particleEvent)
     {
         if (!isGrounded)
         {

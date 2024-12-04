@@ -5,7 +5,6 @@ using UnityEngine;
 public class PowerObject : MonoBehaviour
 {
     [SerializeField] private PlayerSkills.SkillType skillType;
-    //private PlayerSkills playerSkills;
 
     public void PlayerSkillActive(PlayerSkills playerSkills)
     {

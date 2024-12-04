@@ -11,10 +11,12 @@ public class PlayerAnimator : MonoBehaviour
     private static readonly int IsDashing = Animator.StringToHash("isDashing");
     private static readonly int OnWall = Animator.StringToHash("onWall");
     private static readonly int IsFastFalling = Animator.StringToHash("isFastFalling");
+    private static readonly int IsAttacking = Animator.StringToHash("isAttacking");
     public void SetIsWalking(bool isWalking) => _playerAnimator.SetBool(IsWalking, isWalking);
     public void SetIsJumping(bool isJumping) => _playerAnimator.SetBool(IsJumping, isJumping);
     public void SetIsGrounded(bool isGrounded) => _playerAnimator.SetBool(IsGrounded, isGrounded);
     public void SetIsDashing(bool isDashing) => _playerAnimator.SetBool(IsDashing, isDashing);
     public void SetOnWall(bool onWall) => _playerAnimator.SetBool(OnWall, onWall);
     public void SetIsFastFalling(bool isFastFalling) => _playerAnimator.SetBool(IsFastFalling, isFastFalling);
+    public void SetIsAttacking() => _playerAnimator.SetTrigger(IsAttacking);
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerWallJump : PlayerPower
 {
     private bool isActive;
+    private PlayerController playerController;
 
     private bool isWallSliding;
     private float wallSlidingSpeed = 2f;
@@ -18,21 +19,22 @@ public class PlayerWallJump : PlayerPower
     public bool IsWallJumping { get => isWallJumping; set => isWallJumping = value; }
     public bool IsWallSliding { get => isWallSliding; set => isWallSliding = value; }
 
-    public override void Activate(bool state)
+    public override void Activate(bool State, PlayerController playerController)
     {
-        isActive = state;
+        isActive = State;
+        this.playerController = playerController;
     }
 
-    public void WallJump(bool isJumpingPressed, PlayerController playerController, CapsuleCollider2D capsuleCollider2D, float heightCheckDistance, LayerMask groundLayerMask, bool isGrounded)
+    public void WallJump(bool isJumpingPressed, CapsuleCollider2D capsuleCollider2D, float heightCheckDistance, LayerMask groundLayerMask, bool isGrounded)
     {
         if (!isActive) return;
         else
         {
-            WallJumpActive(isJumpingPressed, playerController);
-            WallSlide(capsuleCollider2D, heightCheckDistance, groundLayerMask, isGrounded, playerController);
+            WallJumpActive(isJumpingPressed);
+            WallSlide(capsuleCollider2D, heightCheckDistance, groundLayerMask, isGrounded);
         }
     }
-    private void WallJumpActive(bool isJumpingPressed, PlayerController playerController)
+    private void WallJumpActive(bool isJumpingPressed)
     {
         if (IsWallSliding)
         {
@@ -68,7 +70,7 @@ public class PlayerWallJump : PlayerPower
             _wasJumpingPressed = false; // Restablecer el estado del botón
         }
     }
-    private void WallSlide(CapsuleCollider2D capsuleCollider2D, float heightCheckDistance, LayerMask groundLayerMask, bool isGrounded, PlayerController playerController)
+    private void WallSlide(CapsuleCollider2D capsuleCollider2D, float heightCheckDistance, LayerMask groundLayerMask, bool isGrounded)
     {
         if (IsWalled(capsuleCollider2D, heightCheckDistance, groundLayerMask) && !isGrounded && playerController.CurrentVelocity.x != 0)
         {
