@@ -10009,11 +10009,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   fallingDownMultiplier: 1
-  maxJumpHeight: 10
-  maxJumpTine: 1
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 8
+  maxJumpHeight: 10
+  maxJumpTine: 1
   particleEvents:
     m_PersistentCalls:
       m_Calls:
@@ -10102,22 +10102,6 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: ca5b6811-2f7a-4a67-84b8-d3f056632e3a
     m_ActionName: PlayerControls/Jump[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7994112477761164078}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: OnInteract
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: eb5787fa-c826-42fa-a5b7-bbd6533fc7d8
-    m_ActionName: PlayerControls/Interact[/Keyboard/x]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7994112477761164078}
@@ -10244,7 +10228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1.5
-  bashPower: 7000
+  bashPower: 2500
   bashTime: 0.2
   arrow: {fileID: 0}
 --- !u!114 &9025539665040612839
