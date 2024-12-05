@@ -210,8 +210,8 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetIsWalking(_playerState == PlayerState.isGrounded && _currentVelocity.x != 0);
         playerAnimator.SetIsJumping(_playerState == PlayerState.isJumping);
         playerAnimator.SetIsDashing(playerDash.IsDashing || IsBashingPressed);
-        playerAnimator.SetOnWall(playerWallJump.IsWalled(capsuleCollider2D, _heightCheckDistance, groundLayerMask) && playerWallJump.IsWallSliding);
-        playerAnimator.SetIsFastFalling(IsFastFallingPressed && playerFastFall.IsFastFalling && !IsGrounded());
+        //playerAnimator.SetOnWall(playerWallJump.IsWalled(capsuleCollider2D, _heightCheckDistance, groundLayerMask) && playerWallJump.IsWallSliding);
+        //playerAnimator.SetIsFastFalling(IsFastFallingPressed && playerFastFall.IsFastFalling && !IsGrounded());
     }
     private void Flip()
     {
