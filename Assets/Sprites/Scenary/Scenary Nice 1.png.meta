@@ -1,0 +1,1397 @@
+fileFormatVersion: 2
+guid: 351a5359af40f6541a4056f3556fb0a6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scenary Nice 1_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 699
+        width: 194
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a2b7ef3e2bb38499dc6dfe8deb1f88
+      internalID: -1754797105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 799
+        width: 60
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f41ce8538e77f43aeee11c6da9c2b6
+      internalID: -1705585645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_2
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 798
+        width: 66
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4868a4487432666428aca54872a444e5
+      internalID: -1955273482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_3
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 799
+        width: 79
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f405a6137a1973048a18c14e308cde78
+      internalID: 597435215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_4
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 798
+        width: 66
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0044ce129106b14c964176802635711
+      internalID: 107121575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_5
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 799
+        width: 143
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943339e49597b8f4799689251abc4758
+      internalID: -876323122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_6
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 813
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b771c2e587601974f99063972da29cb5
+      internalID: -1493899546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_8
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 713
+        width: 70
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9e45e3c8ad8694cb08e25791c5d65f
+      internalID: 180882576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_9
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 713
+        width: 67
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547fe78a4d34dde4693268f40b0a6051
+      internalID: 668208171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_10
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 713
+        width: 61
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45350326f0d0c3b4caf1d5dfbce671a1
+      internalID: -238004788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_11
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 714
+        width: 73
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a655483f4983e4c84a2ca0ded0c23f
+      internalID: 1075765760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_12
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 699
+        width: 152
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f842f41302581749a0af8747ae2849c
+      internalID: -1074771296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_13
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 713
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07857db8e916cdf41829f393bd7ce6e8
+      internalID: -1688722000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_16
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 658
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ef48818ebc5c741bc9910f205497cc
+      internalID: -681483614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 573
+        width: 82
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7492e4051e9c143bad3c6f1d3c5934
+      internalID: 673430457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_18
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 658
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df6a8b52abc6184d945a88118605612
+      internalID: 544612911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_19
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 658
+        width: 61
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44361e8a9660282418f367eeddfdfed6
+      internalID: 1550652613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_20
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 658
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3d9f35247a0cc438da8518495f0419
+      internalID: 1420632931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_21
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 664
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e9cb0e77a780b4c84a0705bc47c6f1
+      internalID: 233446080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_22
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 645
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387a16a0e7ac31347b0df29c56e0738a
+      internalID: 1008245871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_23
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 629
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb549db4fbe1220439234c021f750ffc
+      internalID: -1588471866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_24
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 573
+        width: 87
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa82c94f2e42cd14a956ed52f8800370
+      internalID: 400905380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_25
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 573
+        width: 93
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d7eb3de3f66b84497311c6a7f9e25b
+      internalID: 1637409002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_26
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 573
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb426e15a300a14794dbbf67d53ee44
+      internalID: 560164142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_27
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 574
+        width: 158
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e3bd38ac6c0a946b1b7c7982183529
+      internalID: -330333479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_28
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 573
+        width: 73
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20b7caac47b46a4ab84bb0fc67d67fa
+      internalID: 340222800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_29
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 573
+        width: 86
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de65a9a7072d42941ab6512cd593c381
+      internalID: -51475479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_30
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 573
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e772ca249871d24db3801ac55368279
+      internalID: 1864592749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_31
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 495
+        width: 69
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe68b7bd816ac042ae7d1a3e391fb34
+      internalID: 1357198627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_32
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 492
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c214dbaa0e1e27b4b869955298d26e36
+      internalID: 1663063154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_33
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 492
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14270c3208009b743915589b26970179
+      internalID: 1136989904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_34
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 258
+        width: 40
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3862bd22b657434d9fcbd79daa7ecd4
+      internalID: 995744329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_35
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 512
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8829131bd834514cba5d9251d694086
+      internalID: 1541618356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_36
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 512
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0545e9185c61b42a9f0b8907105930
+      internalID: 435506444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_37
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 512
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af57b13853fe69147a446c51a9f3b7e9
+      internalID: -329394858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_38
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 512
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3143f1d71018a84cbcdaec8349c4d2e
+      internalID: -250595701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_39
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 477
+        width: 130
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef06d29683c8aee4794418afdd32c019
+      internalID: -739246400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_40
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 473
+        width: 157
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e28fc39760132d43901731b1f972e29
+      internalID: -1383123960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_41
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 274
+        width: 26
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacc72864159cd94da066408047e5ef1
+      internalID: 2107677879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_42
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 258
+        width: 50
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8bdc50c42928445af43ecedabca5dd
+      internalID: 1546410670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_43
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 258
+        width: 29
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97059a9724818dd458e67bccc5f9e6d2
+      internalID: 466969338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_44
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 258
+        width: 63
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb84e6cdab937c4469b47601a9209713
+      internalID: 610934418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_45
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 261
+        width: 21
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4507df6a148d50244a2ee3d43688ccae
+      internalID: 1380918210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_46
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 262
+        width: 28
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f73c4360533d8546ab65ec5d6cca7df
+      internalID: -772746654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_47
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 379
+        width: 132
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ddb315fde5dfd46aaa7b69c2565cad
+      internalID: 2114959017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_48
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 371
+        width: 128
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c7472bbd915ef4385c7d32c66eb288
+      internalID: -1106046598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_49
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 261
+        width: 118
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7f0cd21efff6c4ab96c58dae03feb8
+      internalID: 2108592711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_50
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 262
+        width: 118
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731525f3425a2c049b4992ead5a04e84
+      internalID: -25780337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_51
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 134
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99685dba3c49574b8f06a48385aa2ef
+      internalID: -1903598943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_52
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 131
+        width: 155
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc76991e8cebdc46aa56d392a3667a9
+      internalID: 1895628250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_53
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 131
+        width: 212
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b93ac2409464846bc88609116e0576
+      internalID: 1311535662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_54
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 136
+        width: 154
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6caead48d64ceec4299d26716a615696
+      internalID: 1062163767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_55
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 136
+        width: 217
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de473698480f7bb4a8cd1d46704fae53
+      internalID: -1502141504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_56
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 15
+        width: 287
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a5bcef99451364589831a846663eec
+      internalID: 1654593047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_57
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 15
+        width: 346
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412d30600a22fb54483c8bd36c95f4c6
+      internalID: 129253718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_58
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 15
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7e0a6b31208364fbe63d2ffdfbd075
+      internalID: -1234606343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scenary Nice 1_59
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 15
+        width: 205
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c8ea25f74b39d409646b8d45d9933d
+      internalID: 2100463315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Scenary Nice 1_0: -1754797105
+      Scenary Nice 1_1: -1705585645
+      Scenary Nice 1_10: -238004788
+      Scenary Nice 1_11: 1075765760
+      Scenary Nice 1_12: -1074771296
+      Scenary Nice 1_13: -1688722000
+      Scenary Nice 1_14: 1926847690
+      Scenary Nice 1_15: 1538065379
+      Scenary Nice 1_16: -681483614
+      Scenary Nice 1_17: 673430457
+      Scenary Nice 1_18: 544612911
+      Scenary Nice 1_19: 1550652613
+      Scenary Nice 1_2: -1955273482
+      Scenary Nice 1_20: 1420632931
+      Scenary Nice 1_21: 233446080
+      Scenary Nice 1_22: 1008245871
+      Scenary Nice 1_23: -1588471866
+      Scenary Nice 1_24: 400905380
+      Scenary Nice 1_25: 1637409002
+      Scenary Nice 1_26: 560164142
+      Scenary Nice 1_27: -330333479
+      Scenary Nice 1_28: 340222800
+      Scenary Nice 1_29: -51475479
+      Scenary Nice 1_3: 597435215
+      Scenary Nice 1_30: 1864592749
+      Scenary Nice 1_31: 1357198627
+      Scenary Nice 1_32: 1663063154
+      Scenary Nice 1_33: 1136989904
+      Scenary Nice 1_34: 995744329
+      Scenary Nice 1_35: 1541618356
+      Scenary Nice 1_36: 435506444
+      Scenary Nice 1_37: -329394858
+      Scenary Nice 1_38: -250595701
+      Scenary Nice 1_39: -739246400
+      Scenary Nice 1_4: 107121575
+      Scenary Nice 1_40: -1383123960
+      Scenary Nice 1_41: 2107677879
+      Scenary Nice 1_42: 1546410670
+      Scenary Nice 1_43: 466969338
+      Scenary Nice 1_44: 610934418
+      Scenary Nice 1_45: 1380918210
+      Scenary Nice 1_46: -772746654
+      Scenary Nice 1_47: 2114959017
+      Scenary Nice 1_48: -1106046598
+      Scenary Nice 1_49: 2108592711
+      Scenary Nice 1_5: -876323122
+      Scenary Nice 1_50: -25780337
+      Scenary Nice 1_51: -1903598943
+      Scenary Nice 1_52: 1895628250
+      Scenary Nice 1_53: 1311535662
+      Scenary Nice 1_54: 1062163767
+      Scenary Nice 1_55: -1502141504
+      Scenary Nice 1_56: 1654593047
+      Scenary Nice 1_57: 129253718
+      Scenary Nice 1_58: -1234606343
+      Scenary Nice 1_59: 2100463315
+      Scenary Nice 1_6: -1493899546
+      Scenary Nice 1_7: -1580994320
+      Scenary Nice 1_8: 180882576
+      Scenary Nice 1_9: 668208171
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
