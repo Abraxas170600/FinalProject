@@ -13,33 +13,39 @@ MonoBehaviour:
   m_Name: Floor
   m_EditorClassIdentifier: 
   m_Angles:
-  - m_Start: -51
-    m_End: 46
+  - m_Start: -45
+    m_End: 45
     m_Order: 0
     m_Sprites:
-    - {fileID: -755692029, guid: a35bfdecf0122164a9e4e18392858331, type: 3}
-  - m_Start: 94
-    m_End: 265
+    - {fileID: 2042403487, guid: 6eb79d54ad9f7524197cb8cfd1421b2b, type: 3}
+  - m_Start: 45
+    m_End: 135
+    m_Order: 0
+    m_Sprites:
+    - {fileID: -1435122895, guid: 6eb79d54ad9f7524197cb8cfd1421b2b, type: 3}
+  - m_Start: -225
+    m_End: -135
     m_Order: 0
     m_Sprites: []
-  - m_Start: 46
-    m_End: 94
+  - m_Start: -135
+    m_End: -45
     m_Order: 0
-    m_Sprites: []
-  m_FillTexture: {fileID: 2800000, guid: b281b91a70a624a0da1c43adc1c30c7b, type: 3}
+    m_Sprites:
+    - {fileID: -216496915, guid: 6eb79d54ad9f7524197cb8cfd1421b2b, type: 3}
+  m_FillTexture: {fileID: 2800000, guid: 1dee3ad167ca77242a7c025301efc9e1, type: 3}
   m_CornerSprites:
   - m_CornerType: 0
     m_Sprites:
-    - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
+    - {fileID: -730335746, guid: 6eb79d54ad9f7524197cb8cfd1421b2b, type: 3}
   - m_CornerType: 1
     m_Sprites:
-    - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
+    - {fileID: -820610416, guid: 6eb79d54ad9f7524197cb8cfd1421b2b, type: 3}
   - m_CornerType: 2
     m_Sprites:
-    - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
+    - {fileID: -1199856099, guid: 6eb79d54ad9f7524197cb8cfd1421b2b, type: 3}
   - m_CornerType: 3
     m_Sprites:
-    - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
+    - {fileID: -816921378, guid: 6eb79d54ad9f7524197cb8cfd1421b2b, type: 3}
   - m_CornerType: 4
     m_Sprites:
     - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
@@ -52,5 +58,5 @@ MonoBehaviour:
   - m_CornerType: 7
     m_Sprites:
     - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
-  m_FillOffset: -0.039
+  m_FillOffset: 0
   m_UseSpriteBorders: 1
