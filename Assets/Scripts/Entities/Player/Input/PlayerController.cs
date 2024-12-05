@@ -236,6 +236,8 @@ public class PlayerController : MonoBehaviour
         {
             _powerObject.PlayerSkillActive(_playerSkills);
             playerPowerStorage.PlayerPowers[(int)_powerObject.GetSkillType()].Activate(CanUsePower(_powerObject), this);
+
+            Destroy(_powerObject.gameObject);
         }
     }
     private bool CanUsePower(PowerObject powerObject)
