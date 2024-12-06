@@ -49,16 +49,6 @@ public class MeleeEnemy : Enemy
             currentTargetIndex = (currentTargetIndex + 1) % patrolPoints.Length;
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            float knockbackForce = 15f;
-            float knockbackDuration = 0.15f;
-
-            player.ReceiveDamage(1, transform.position, knockbackForce, knockbackDuration);
-        }
-    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;

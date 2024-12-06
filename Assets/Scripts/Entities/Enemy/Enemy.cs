@@ -47,7 +47,16 @@ public abstract class Enemy : Entity
             transform.localScale = localScale;
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            float knockbackForce = 15f;
+            float knockbackDuration = 0.15f;
 
+            player.ReceiveDamage(1, transform.position, knockbackForce, knockbackDuration);
+        }
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

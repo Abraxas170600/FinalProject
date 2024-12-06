@@ -10228,7 +10228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1.5
-  bashPower: 2500
+  bashPower: 7000
   bashTime: 0.2
   arrow: {fileID: 0}
 --- !u!114 &9025539665040612839
