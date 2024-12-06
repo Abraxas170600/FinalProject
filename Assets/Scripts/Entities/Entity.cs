@@ -106,4 +106,10 @@ public abstract class Entity : MonoBehaviour
         currentLife = maxLife;
         healthChangeEvent.Invoke(currentLife);
     }
+    public void InstaKill()
+    {
+        currentLife = 0;
+        healthChangeEvent.Invoke(currentLife);
+        Defeat();
+    }
 }

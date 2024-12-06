@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Walk Anim_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 218
+        width: 133
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05c69453fda1c9469555789b319ccfc
+      internalID: 1804984970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Anim_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 218
+        width: 128
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5fcd647e22398847b16840a5ed89728
+      internalID: 719281306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Anim_2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 218
+        width: 132
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6114a41da9afed246a918748f3eb5936
+      internalID: 1646473685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Anim_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5
+        width: 129
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bdb49a84eaa1447a3bbb46de679f2f
+      internalID: -1330976124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Anim_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 5
+        width: 132
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7116d3a1ec116b48a3d3d62424fd88f
+      internalID: 2026406036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Anim_5
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 7
+        width: 134
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2c56ff461359d4bb2675d4e7b103f9
+      internalID: -2006087463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +258,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Walk Anim_0: 1804984970
+      Walk Anim_1: 719281306
+      Walk Anim_2: 1646473685
+      Walk Anim_3: -1330976124
+      Walk Anim_4: 2026406036
+      Walk Anim_5: -2006087463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

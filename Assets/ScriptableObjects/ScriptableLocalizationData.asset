@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfbcaf227071a544bb1cef2b08d277db, type: 3}
+  m_Name: ScriptableLocalizationData
+  m_EditorClassIdentifier: 
+  languageModelList:
+  - key: Play_Button
+    languages:
+    - language: 34
+      localizedText: Jugar
+    - language: 10
+      localizedText: Play
+  - key: Options_Button
+    languages:
+    - language: 34
+      localizedText: Opciones
+    - language: 10
+      localizedText: Options
+  - key: Credits_Button
+    languages:
+    - language: 34
+      localizedText: Creditos
+    - language: 10
+      localizedText: Credits
+  - key: Title_Game
+    languages:
+    - language: 34
+      localizedText: Titulo
+    - language: 10
+      localizedText: Title
+  - key: Press_Text
+    languages:
+    - language: 34
+      localizedText: Presiona Cualquier Tecla Para Jugar
+    - language: 10
+      localizedText: Press Any Button To Play
+  - key: Music_Text
+    languages:
+    - language: 34
+      localizedText: Musica
+    - language: 10
+      localizedText: Music
+  - key: Screen_Button
+    languages:
+    - language: 34
+      localizedText: Pantalla
+    - language: 10
+      localizedText: Screen
+  - key: Controls_Button
+    languages:
+    - language: 34
+      localizedText: Controles
+    - language: 10
+      localizedText: Controls
+  - key: Brightness_Text
+    languages:
+    - language: 34
+      localizedText: Brillo
+    - language: 10
+      localizedText: Brightness
+  - key: Jump_Text
+    languages:
+    - language: 34
+      localizedText: Saltar
+    - language: 10
+      localizedText: Jump
+  - key: Movement_Text
+    languages:
+    - language: 34
+      localizedText: Movimiento
+    - language: 10
+      localizedText: Movement
+  - key: Rol_1
+    languages:
+    - language: 34
+      localizedText: Programador Lider
+    - language: 10
+      localizedText: Lead Programmer
+  - key: Rol_2
+    languages:
+    - language: 34
+      localizedText: Programador Personaje
+    - language: 10
+      localizedText: Character Programmer
+  - key: Rol_3
+    languages:
+    - language: 34
+      localizedText: Programador UI
+    - language: 10
+      localizedText: UI Programmer
+  - key: Rol_4
+    languages:
+    - language: 34
+      localizedText: Director de Arte
+    - language: 10
+      localizedText: Art Director
+  - key: Spanish_Button
+    languages:
+    - language: 34
+      localizedText: "Espa\xF1ol"
+    - language: 10
+      localizedText: Spanish
+  - key: English_Button
+    languages:
+    - language: 34
+      localizedText: Ingles
+    - language: 10
+      localizedText: English
+  - key: Language_Button
+    languages:
+    - language: 34
+      localizedText: Lenguaje
+    - language: 10
+      localizedText: Language
+  - key: Pause_Text
+    languages:
+    - language: 34
+      localizedText: Pausa
+    - language: 10
+      localizedText: Pause
+  - key: Continue_Button
+    languages:
+    - language: 34
+      localizedText: Continuar
+    - language: 10
+      localizedText: Continue
+  - key: Restart_Button
+    languages:
+    - language: 34
+      localizedText: Reiniciar
+    - language: 10
+      localizedText: Restart
+  - key: Home_Button
+    languages:
+    - language: 34
+      localizedText: Volver
+    - language: 10
+      localizedText: Home
+  - key: Yes_Button
+    languages:
+    - language: 34
+      localizedText: Si
+    - language: 10
+      localizedText: Yes
+  - key: GoBack_Text
+    languages:
+    - language: 34
+      localizedText: Volver al Menu?
+    - language: 10
+      localizedText: Go Back To Menu?
