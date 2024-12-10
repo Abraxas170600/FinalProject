@@ -7,7 +7,7 @@ TagManager:
   - PowerObject
   - BashAble
   - Obstacle
-  - FxTemporaire
+  - Bonfire
   layers:
   - Default
   - TransparentFX
@@ -16,8 +16,8 @@ TagManager:
   - Water
   - UI
   - Background
-  - 
-  - 
+  - Mid
+  - Foreground
   - 
   - 
   - 
@@ -47,4 +47,13 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 1497904753
+    locked: 0
+  - name: Background
+    uniqueID: 2552121531
+    locked: 0
+  - name: Mid
+    uniqueID: 2820029251
+    locked: 0
+  - name: Foreground
+    uniqueID: 1065377961
     locked: 0

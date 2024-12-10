@@ -35,8 +35,10 @@ public class PlayerController : MonoBehaviour
 
     private PlayerState _playerState;
 
-    private PlayerSkills _playerSkills;
-    private PowerObject _powerObject;
+    private PlayerSkills playerSkills;
+    private PlayerData playerData;
+    private PowerObject powerObject;
+    private Bonfire bonfireObject;
 
     private Vector2 _inputVelocity;
     private Vector2 _currentVelocity;
@@ -110,8 +112,14 @@ public class PlayerController : MonoBehaviour
         playerAttack = GetComponent<PlayerAttack>();
 
         playerPowerStorage.Initialize();
-        _playerSkills = new PlayerSkills();
+        playerSkills = new PlayerSkills();
+        playerData = SaveSystem.Load();
+        Invoke((nameof(SetPlayerData)), 0.05f);
         Gravity = (-2f * maxJumpHeight) / Mathf.Pow(maxJumpTine / 2f, 2);
+    }
+    private void SetPlayerData()
+    {
+        transform.position = playerData.position;
     }
     public void NormalActions()
     {
@@ -231,30 +239,28 @@ public class PlayerController : MonoBehaviour
     #region Power Methods
     private void PowerActiveChecker()
     {
-        if (_powerObject == null) return;
+        if (powerObject == null) return;
         else
         {
-            _powerObject.PlayerSkillActive(_playerSkills);
-            playerPowerStorage.PlayerPowers[(int)_powerObject.GetSkillType()].Activate(CanUsePower(_powerObject), this);
+            powerObject.PlayerSkillActive(playerSkills);
+            playerPowerStorage.PlayerPowers[(int)powerObject.GetSkillType()].Activate(CanUsePower(powerObject), this);
 
-            Destroy(_powerObject.gameObject);
+            Destroy(powerObject.gameObject);
         }
     }
     private bool CanUsePower(PowerObject powerObject)
     {
-        return _playerSkills.IsSkillUnlocked(powerObject.GetSkillType());
+        return playerSkills.IsSkillUnlocked(powerObject.GetSkillType());
     }
-    public void PowerDetected(bool detected)
+    #endregion
+    #region Bonfire Methods
+    private void BonfireChecker()
     {
-        _powerObject = triggerDetector.LastElementDetected.GetComponent<PowerObject>();
-
-        if (detected)
-        {
-            _powerObject.InteractText(true);
-        }
+        if (bonfireObject == null) return;
         else
         {
-            _powerObject.InteractText(false);
+            playerData = new(transform.position, playerSkills.UnlockedSkillTypeList());
+            bonfireObject.SaveGame(playerData);
         }
     }
     #endregion
@@ -307,7 +313,11 @@ public class PlayerController : MonoBehaviour
     }
     public void OnInteract(InputAction.CallbackContext value)
     {
-        if (value.started) PowerActiveChecker();
+        if (value.started)
+        {
+            PowerActiveChecker();
+            BonfireChecker();
+        }
     }
     public void OnFastFalling(InputAction.CallbackContext value)
     {
@@ -326,5 +336,34 @@ public class PlayerController : MonoBehaviour
             playerAttack.AttackTimeCounter = 0;
         }
     }
+    #endregion
+
+    #region Detection Methods
+    public void PowerDetected(bool detected)
+    {
+        powerObject = triggerDetector.LastElementDetected.GetComponent<PowerObject>();
+
+        if (detected && powerObject != null)
+        {
+            powerObject.InteractText(true);
+        }
+        else if(!detected && powerObject != null)
+        {
+            powerObject.InteractText(false);
+            powerObject = null;
+        }
+    }
+    public void BonfireDetected(bool detected)
+    {
+        if (detected)
+        {
+            bonfireObject = triggerDetector.LastElementDetected.GetComponent<Bonfire>();
+        }
+        else
+        {
+            bonfireObject = null;
+        }
+    }
+
     #endregion
 }

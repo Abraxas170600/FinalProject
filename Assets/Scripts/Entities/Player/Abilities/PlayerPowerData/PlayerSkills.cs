@@ -27,4 +27,8 @@ public class PlayerSkills
     {
         return unlockedSkillTypeList.Contains(skillType);
     }
+    public List<SkillType> UnlockedSkillTypeList()
+    {
+        return unlockedSkillTypeList;
+    }
 }

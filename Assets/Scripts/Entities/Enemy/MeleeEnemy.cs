@@ -8,11 +8,13 @@ public class MeleeEnemy : Enemy
     [SerializeField] private Vector2[] patrolPoints;
     [SerializeField] private float arrivalThreshold = 0.5f;
     private int currentTargetIndex = 0;
+    private Animator anim;
 
     private Vector2 currentTarget => patrolPoints[currentTargetIndex];
     protected override void Start()
     {
         base.Start();
+        anim = GetComponent<Animator>();
         if (patrolPoints.Length > 0)
         {
             currentTargetIndex = 0;
@@ -21,11 +23,13 @@ public class MeleeEnemy : Enemy
     protected override void Aggresive()
     {
         ChasingPlayer();
+        anim.SetBool("Attack", true);
     }
 
     protected override void Passive()
     {
         Patrol();
+        anim.SetBool("Attack", false);
     }
     private void ChasingPlayer()
     {
